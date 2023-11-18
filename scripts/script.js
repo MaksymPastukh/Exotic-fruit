@@ -90,41 +90,41 @@ popup()
 // ЧЕТВЕРТЫЙ аргумент - класс активности, который будет добавлятся для таба, который сейчас активен.
 tabs('.tabs-header', '.tabs-header-item', '.tabs-content-item', 'active')
 
-let slideIndex = 1;
-const slides = document.querySelectorAll('.item-slider'),
-    prev = document.querySelector('.prev'),
-    next = document.querySelector('.next');
-
-showSlides(slideIndex);
-
-function showSlides(n) {
-    let i;
-    for (i = 0; i < slides.length; i++) {
-        slides[i].classList.add('hide');
-        slides[i].classList.remove('show');
-    }
-
-    // Показываем следующие три слайда
-    for (i = n - 1; i < n + 2; i++) {
-        if (i >= slides.length) {
-            slides[i - slides.length].classList.add('show');
-        } else if (i < 0) {
-            slides[slides.length + i].classList.add('show');
-        } else {
-            slides[i].classList.add('show');
-        }
-    }
-}
-
-function plusSlides (n) {
-    showSlides(slideIndex += n);
-}
-
-prev.addEventListener('click', function(){
-    plusSlides(-1);
-});
-
-next.addEventListener('click', function(){
-    plusSlides(1);
-});
+// let slideIndex = 1;
+// const slides = document.querySelectorAll('.item-slider'),
+//     prev = document.querySelector('.prev'),
+//     next = document.querySelector('.next');
+//
+// showSlides(slideIndex);
+//
+// function showSlides(n) {
+//     let i;
+//     for (i = 0; i < slides.length; i++) {
+//         slides[i].classList.add('hide');
+//         slides[i].classList.remove('show');
+//     }
+//
+//     // Показываем следующие три слайда
+//     for (i = n - 1; i < n + 2; i++) {
+//         if (i >= slides.length) {
+//             slides[i - slides.length].classList.add('show');
+//         } else if (i < 0) {
+//             slides[slides.length + i].classList.add('show');
+//         } else {
+//             slides[i].classList.add('show');
+//         }
+//     }
+// }
+//
+// function plusSlides (n) {
+//     showSlides(slideIndex += n);
+// }
+//
+// prev.addEventListener('click', function(){
+//     plusSlides(-1);
+// });
+//
+// next.addEventListener('click', function(){
+//     plusSlides(1);
+// });
 
