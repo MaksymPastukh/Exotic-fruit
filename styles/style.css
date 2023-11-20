@@ -695,8 +695,6 @@ body {
 
 .faq .container .faq-accordion .accordion .accordion-item .accordion-item-content {
   display: none;
-  -webkit-animation: fadeInUp 1.3s ease;
-          animation: fadeInUp 1.3s ease;
 }
 
 .faq .container .faq-accordion .accordion .accordion-item .accordion-item-content .content-text {
@@ -710,6 +708,10 @@ body {
 .faq .container .faq-accordion .accordion .accordion-item.accordion-item-active .accordion-item-content {
   display: block;
   border-top: 0.1rem solid #fdde0b;
+  -webkit-animation: fadeInUp 1.3s ease;
+          animation: fadeInUp 1.3s ease;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .faq .container .faq-accordion .accordion .accordion-item.accordion-item-active .trigger-img img {
@@ -750,23 +752,8 @@ body {
   margin-bottom: 5rem;
 }
 
-.feedback .container .slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-}
-
 .feedback .container .slider .slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -777,6 +764,10 @@ body {
   transition: -webkit-transform 1s;
   transition: transform 1s;
   transition: transform 1s, -webkit-transform 1s;
+}
+
+.feedback .container .slider .slide.slide-active {
+  display: block;
 }
 
 .feedback .container .slider .slide .slide-bg {
@@ -832,20 +823,28 @@ body {
   line-height: 1.313;
 }
 
-.feedback .container .slider .slider-btn {
+.feedback .container .slider-btn {
   position: absolute;
-  top: 45%;
+  top: 60%;
   border: none;
   background: transparent;
   cursor: pointer;
 }
 
-.feedback .container .slider .slider-btn-left {
-  left: 10%;
+.feedback .container .slider-btn-left {
+  left: 15rem;
 }
 
-.feedback .container .slider .slider-btn-right {
-  right: 10%;
+.feedback .container .slider-btn-left img {
+  max-width: 100%;
+}
+
+.feedback .container .slider-btn-right {
+  right: 15rem;
+}
+
+.feedback .container .slider-btn-right img {
+  max-width: 100%;
 }
 
 .how-to-order {
