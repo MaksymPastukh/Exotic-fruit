@@ -53,6 +53,30 @@ body {
   padding-right: 1.5rem;
 }
 
+@-webkit-keyframes zoomOut {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes zoomOut {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
 .main-title {
   font-size: 4.5rem;
   font-family: "Montserrat-Bold", sans-serif;
