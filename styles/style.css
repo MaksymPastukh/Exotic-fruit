@@ -1817,7 +1817,7 @@ body {
   }
 
   .footer {
-    background-image: url("../assets/images/figura-footer.png");
+    background-image: url("../../assets/images/figura-footer.png");
     padding: 20rem 0 0 0;
     background-repeat: no-repeat;
     background-size: auto;
@@ -2289,7 +2289,7 @@ body {
   }
 
   .footer {
-    background-image: url("../assets/images/footer-figura-mob.png");
+    background-image: url("../../assets/images/footer-figura-mob.png");
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center bottom;
